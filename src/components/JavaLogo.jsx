@@ -1,7 +1,7 @@
 import { Float, useGLTF } from '@react-three/drei';
 
 const JavaLogo = (props) => {
-  const { scene } = useGLTF('models/java.glb');
+  const { scene } = useGLTF(import.meta.env.BASE_URL +'models/java.glb');
 
   return (
     <Float floatIntensity={1}>
@@ -10,6 +10,6 @@ const JavaLogo = (props) => {
   );
 };
 
-useGLTF.preload('models/java.glb');
+useGLTF.preload(import.meta.env.BASE_URL +'models/java.glb');
 
 export default JavaLogo;

@@ -27,14 +27,14 @@ export const myProjects = [
     desc: 'Online kaszinó szimulátor',
     subdesc:
       'Egy 3d-s térben megalkotott játékelosztó amit PlayCanvas webengine segítségével készült, a kaszinójátékokat reactban kódoltam.',
-    texture: '/textures/project/luckylimits.mp4',
-    logo: '/assets/casinoicon.png',
+    texture: import.meta.env.BASE_URL+'/textures/project/luckylimits.mp4',
+    logo: import.meta.env.BASE_URL+'/assets/casinoicon.png',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
       boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
-    spotlight: '/assets/spotlight1.png',
+    spotlight: import.meta.env.BASE_URL+'/assets/spotlight1.png',
     
   },
   {
@@ -42,14 +42,14 @@ export const myProjects = [
     desc: 'Túlélő játék',
     subdesc:
       'Harry Potter világában játszódó túlélőjáték, ahol egyenkent jönnek a főellenségek, ha ők meghalnak új varázsige birtokába kerül a játékos. Gui-s javaban íródott',
-    texture: '/textures/project/hp.mp4',
-    logo: '/assets/hp.png',
+    texture: import.meta.env.BASE_URL+'/textures/project/hp.mp4',
+    logo: import.meta.env.BASE_URL+'/assets/hp.png',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
       boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
-    spotlight: '/assets/spotlight1.png',
+    spotlight: import.meta.env.BASE_URL+'/assets/spotlight1.png',
     
   }
 

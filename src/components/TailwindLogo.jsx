@@ -1,7 +1,7 @@
 import { Float, useGLTF } from '@react-three/drei';
 
 const TailwindLogo = (props) => {
-  const { scene } = useGLTF('models/tailwindcss.glb');
+  const { scene } = useGLTF(import.meta.env.BASE_URL+ 'models/tailwindcss.glb');
 
   return (
     <Float floatIntensity={1}>
@@ -10,6 +10,6 @@ const TailwindLogo = (props) => {
   );
 };
 
-useGLTF.preload('models/tailwindcss.glb');
+useGLTF.preload(import.meta.env.BASE_URL+ 'models/tailwindcss.glb');
 
 export default TailwindLogo;

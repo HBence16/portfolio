@@ -1,7 +1,7 @@
 import { Float, useGLTF } from '@react-three/drei';
 
 const HtmlLogo = (props) => {
-  const { scene } = useGLTF('models/html.glb');
+  const { scene } = useGLTF(import.meta.env.BASE_URL +'models/html.glb');
 
   return (
     <Float floatIntensity={1}>
@@ -10,6 +10,6 @@ const HtmlLogo = (props) => {
   );
 };
 
-useGLTF.preload('models/html.glb');
+useGLTF.preload(import.meta.env.BASE_URL +'models/html.glb');
 
 export default HtmlLogo;
