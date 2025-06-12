@@ -16,9 +16,9 @@ const About = () => {
   };
 
   return (
-    <section className="c-space my-20" id="about">
-      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
-        <div className="col-span-1 xl:row-span-2">
+    <section className="c-space my-20 " id="about">
+      <div className="grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-2 grid-cols-1 gap-5">
+        <div className="col-span-1 xl:row-span-1">
           <div className="grid-container">
             <img src={`${import.meta.env.BASE_URL}assets/grid1.png`} alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
@@ -26,31 +26,30 @@ const About = () => {
               <p className="grid-headtext">Üdvözlöm, Hansághy Bence vagyok!</p>
               <p className="grid-subtext">
                 20 éves lelkes pályakezdő vagyok.
-                Szoftverfejlesztés és tesztelés szakot tanulok technikumban. <br />
-                Jelenleg a szakmai vizsgáim előtt állok. <br />
+                Szoftverfejlesztés és tesztelés szakon van technikusi oklevelem
               </p>
             </div>
           </div>
         </div>
 
-        <div className="col-span-1 xl:row-span-2">
+        <div className="col-span-1 xl:row-span-1">
           <div className="grid-container">
             <img src={`${import.meta.env.BASE_URL}assets/grid2.png`} alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">Tapasztalatok</p>
+              <p className="grid-headtext">Tanult programozási nyelveim</p>
               <p className="grid-subtext">
-                5 éve tanulok html/css/javascriptet
+                5 év HTML/CSS/JavaScript
                 <br />
-                3 évnyi jártasság javában
+                3 év Java
                 <br />
-                1 év frontend tapasztalat
+                1 év React
               </p>
             </div>
           </div>
         </div>
 
-        <div className="col-span-1 xl:row-span-2">
+        <div className="col-span-1 xl:row-span-1">
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
               <Globe
@@ -67,13 +66,13 @@ const About = () => {
             </div>
             <div>
               <p className="grid-headtext">Jelenleg Nyíregyházán élek</p>
-              <p className="grid-subtext">Nyíregyháza és Debrecen között ingadozom, később Szegeden szeretnék tovább tanulni egyetemen, programtervező szakon.</p>
+              <p className="grid-subtext">Nyíregyháza és Debrecen között ingázok, később Szegeden szeretnék tovább tanulni egyetemen, programtervező szakon.</p>
 
             </div>
           </div>
         </div>
 
-        <div className="xl:col-span-2 xl:row-span-2">
+        <div className="xl:col-span-2 xl:row-span-1">
           <div className="grid-container">
             <img src={`${import.meta.env.BASE_URL}assets/grid3.png`} alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
 
@@ -86,7 +85,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="xl:col-span-1 xl:row-span-2">
+        <div className="xl:col-span-1 xl:row-span-1">
           <div className="grid-container">
             <img
               src={`${import.meta.env.BASE_URL}assets/grid4.png`}
