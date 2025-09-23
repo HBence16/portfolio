@@ -72,7 +72,7 @@ const Contact = () => {
         <img src={`${import.meta.env.BASE_URL}assets/terminal.png`} alt="terminal-bg" className="absolute inset-0 min-h-screen" />
 
         <div className="contact-container">
-          <h3 className="head-text">Írjon!</h3>
+          <h3 className="head-text">Lépj velem kapcsolatba!</h3>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
             <label className="space-y-3">

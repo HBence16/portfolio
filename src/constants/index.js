@@ -27,6 +27,7 @@ export const myProjects = [
     desc: 'Online kaszinó szimulátor',
     subdesc:
       'Egy 3d-s térben megalkotott játékelosztó amit PlayCanvas webengine segítségével készült, a kaszinójátékokat reactban kódoltam.',
+    link:'https://github.com/BeteriGabor/Vizsgaremek',
     texture: import.meta.env.BASE_URL+'/textures/project/luckylimits.mp4',
     logo: import.meta.env.BASE_URL+'/assets/casinoicon.png',
     logoStyle: {
@@ -42,6 +43,7 @@ export const myProjects = [
     desc: 'Túlélő játék',
     subdesc:
       'Harry Potter világában játszódó túlélőjáték, ahol egyenkent jönnek a főellenségek, ha ők meghalnak új varázsige birtokába kerül a játékos. Gui-s javaban íródott',
+    link:'https://github.com/HBence16/HarryPotterDeathEatersAttack',
     texture: import.meta.env.BASE_URL+'/textures/project/hp.mp4',
     logo: import.meta.env.BASE_URL+'/assets/hp.png',
     logoStyle: {

@@ -23,6 +23,8 @@ const Projects = () => {
     });
   };
 
+
+
   useGSAP(() => {
     gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' });
   }, [selectedProjectIndex]);
@@ -53,6 +55,10 @@ const Projects = () => {
           <div className="flex justify-between items-center mt-7">
             <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
               <img src={`${import.meta.env.BASE_URL}assets/left-arrow.png`} alt="left arrow" />
+            </button>
+          
+            <button className="text-white cursor-pointer my-5" onClick={() => window.open(currentProject.link, "_blank")}>
+              Próbáld ki!
             </button>
 
             <button className="arrow-btn" onClick={() => handleNavigation('next')}>

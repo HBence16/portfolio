@@ -23,10 +23,10 @@ const About = () => {
             <img src={`${import.meta.env.BASE_URL}assets/grid1.png`} alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
-              <p className="grid-headtext">Üdvözlöm, Hansághy Bence vagyok!</p>
+              <p className="grid-headtext">Hansághy Bence vagyok</p>
               <p className="grid-subtext">
                 20 éves lelkes pályakezdő vagyok.
-                Szoftverfejlesztés és tesztelés szakon van technikusi oklevelem
+                Szoftverfejlesztés és tesztelés szakon szereztem technikusi oklevelet
               </p>
             </div>
           </div>
@@ -51,7 +51,7 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-1">
           <div className="grid-container">
-            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
+            <div className="rounded-3xl w-full sm:h-[276px] h-fit flex justify-center items-center object-contain">
               <Globe
                 height={326}
                 width={326}
@@ -61,12 +61,12 @@ const About = () => {
                 showGraticules
                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[{ lat: 48, lng: 22, text: 'Nyiregyhaza', color: 'white', size: 15 }]}
+                labelsData={[{ lat: 48, lng: 22, text: 'Szeged', color: 'white', size: 100 }]}
               />
             </div>
             <div>
-              <p className="grid-headtext">Jelenleg Nyíregyházán élek</p>
-              <p className="grid-subtext">Nyíregyháza és Debrecen között ingázok, később Szegeden szeretnék tovább tanulni egyetemen, programtervező szakon.</p>
+              <p className="grid-headtext">Jelenleg Szegeden élek</p>
+              <p className="grid-subtext">A Szegedi Tudomány Egyetemen tanulok programtervező informatikusnak.</p>
 
             </div>
           </div>
