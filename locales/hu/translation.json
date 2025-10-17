@@ -1,0 +1,96 @@
+{
+  "hero": {
+    "greeting": "Üdv, Bence vagyok!",
+    "subtitle": "Szoftverfejlesztő"
+  },
+  "about": {
+    "intro": {
+      "title": "Hansághy Bence vagyok",
+      "text": "20 éves lelkes pályakezdő vagyok. Szoftverfejlesztés és tesztelés szakon szereztem technikusi oklevelet."
+    },
+    "skills": {
+      "title": "Tanult programozási nyelveim",
+      "text": "5 év HTML/CSS/JavaScript\n3 év Java\n1 év React"
+    },
+    "location": {
+      "title": "Jelenleg Szegeden élek",
+      "text": "A Szegedi Tudományegyetemen tanulok programtervező informatikusnak."
+    },
+    "passion": {
+      "title": "Szenvedélyem a kódolás",
+      "text": "Szeretem kihasználni a kreativitásom és problémamegoldó képességeim a kódolásban. Nem egy munkaként, hanem hivatásként tekintek a programozásra. Webfejlesztés és/vagy játékfejlesztéssel szeretnék foglalkozni."
+    }
+  },
+
+  "contact": {
+    "title": "Lépj velem kapcsolatba!",
+    "labels": {
+      "name": "Teljes név",
+      "email": "Email cím",
+      "message": "Üzenete"
+    },
+    "placeholders": {
+      "name": "ex., John Doe",
+      "email": "ex., johndoe@gmail.com",
+      "message": "Ide írja az üzenetét"
+    },
+    "buttons": {
+      "send": "Elküldés",
+      "sending": "Küldés..."
+    },
+    "alerts": {
+      "success": "Köszönöm az üzenetét!",
+      "error": "Nem kaptam meg az üzenetét!"
+    }
+  },
+  "nav": {
+    "home": "Kezdőlap",
+    "about": "Magamról",
+    "work": "Készségeim",
+    "contact": "Elérhetőség"
+  },
+  "projects": {
+    "title": "Nagyobb projektjeim",
+    "tryBtn": "Próbáld ki!",
+    "luckylimits": {
+      "title": "Lucky Limits",
+      "desc": "Online kaszinó szimulátor",
+      "subdesc": "Egy 3d-s térben megalkotott játékelosztó amit PlayCanvas webengine segítségével készült, a kaszinójátékokat reactban kódoltam."
+    },
+    "harrypotter": {
+      "title": "Harry Potter The Death Eaters Attack",
+      "desc": "Túlélő játék",
+      "subdesc": "Harry Potter világában játszódó túlélőjáték, ahol egyenként jönnek a főellenségek, ha ők meghalnak új varázsige birtokába kerül a játékos. Gui-s javaban íródott"
+    }
+  },
+  "work": {
+
+    "skills": [
+      {
+        "name": "Tanulékonyság",
+        "title": "Szeretek új dolgokkal kísérletezni, fejleszteni a tudásom. Sok programozási nyelvet, új módszereket önerőből is tanulok."
+      },
+      {
+        "name": "Kreativitás",
+        "title": "Gyakran építek bele a projekteimbe kreatív, vizuálisan megfogó elemeket. Nekem a program funkciója mellett fontos szerepet játszik a kinézete is."
+      },
+      {
+        "name": "Csapatjátékos",
+        "title": "Gyakran fejlesztek csapatban. Szeretek másokkal együtt dolgozni – közösen ötletelni, feladatokat megosztani és egymást segítve elérni a közös célt. Hiszek abban, hogy egy jó csapatban nem csak a munka halad gyorsabban, de sokkal inspirálóbb is."
+      },
+      {
+        "name": "Precizitás",
+        "title": "Ügyelek a részletekre – legyen szó kódról, dizájnról vagy funkciókról. A hibakeresést és a finomhangolást is komolyan veszem."
+      },
+      {
+        "name": "Problémamegoldás",
+        "title": "Szeretek kihívásokkal szembenézni, és hatékony megoldásokat találni komplex problémákra is. A hiba nem akadály, hanem lehetőség."
+      }
+    ]
+  },
+  
+  "footer": {
+    "credit": "Ez a weboldal egy tutorial alapján készült, több kisebb módosítással"
+  }
+
+}
