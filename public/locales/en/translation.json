@@ -1,0 +1,97 @@
+{
+    "hero": {
+    "greeting": "Hi, I'm Bence!",
+    "subtitle": "Software Developer"
+  },
+  "about": {
+    "intro": {
+      "title": "I'm Bence Hansághy",
+      "text": "I'm a 20-year-old enthusiastic beginner. I earned my technician degree in software development and testing."
+    },
+    "skills": {
+      "title": "Programming languages I've learned",
+      "text": "5 years of HTML/CSS/JavaScript\n3 years of Java\n1 year of React"
+    },
+    "location": {
+      "title": "I currently live in Szeged",
+      "text": "I study Computer Science at the University of Szeged."
+    },
+    "passion": {
+      "title": "Coding is my passion",
+      "text": "I love using my creativity and problem-solving skills in programming. I see it not just as a job, but as a calling. I aim to work in web development and/or game development."
+    },
+    "contact": {
+      "title": "Contact me"
+    }
+  },
+
+  "contact": {
+    "title": "Get in touch with me!",
+    "labels": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "ex., John Doe",
+      "email": "ex., johndoe@gmail.com",
+      "message": "Write your message here"
+    },
+    "buttons": {
+      "send": "Send",
+      "sending": "Sending..."
+    },
+    "alerts": {
+      "success": "Thank you for your message!",
+      "error": "I did not receive your message!"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "work": "Skills",
+    "contact": "Contact"
+  },
+  "projects": {
+    "title": "My biggest projects",
+    "tryBtn": "Try it!",
+    "luckylimits": {
+      "title": "Lucky Limits",
+      "desc": "Online casino simulator",
+      "subdesc": "A 3D game table created with PlayCanvas webengine, casino games coded in React."
+    },
+    "harrypotter": {
+      "title": "Harry Potter The Death Eaters Attack",
+      "desc": "Survival game",
+      "subdesc": "A survival game in the Harry Potter world, where bosses appear one by one. If they die, the player gains a new spell. Written in Java with GUI."
+    }
+  },
+  "work": {
+    "skills": [
+      {
+        "name": "Adaptability",
+        "title": "I like experimenting with new things and developing my knowledge. I learn many programming languages and new methods on my own."
+      },
+      {
+        "name": "Creativity",
+        "title": "I often include creative, visually striking elements in my projects. The appearance is as important to me as the functionality."
+      },
+      {
+        "name": "Team Player",
+        "title": "I often work in teams. I enjoy collaborating with others – brainstorming together, sharing tasks, and helping each other reach common goals. I believe a good team is not only faster but also more inspiring."
+      },
+      {
+        "name": "Precision",
+        "title": "I pay attention to details – code, design, or functionality. I take debugging and fine-tuning seriously."
+      },
+      {
+        "name": "Problem Solving",
+        "title": "I enjoy facing challenges and finding effective solutions to complex problems. Mistakes are not obstacles but opportunities."
+      }
+    ]
+  }, 
+  
+    "footer": {
+    "credit": "This website was created based on a tutorial, with several small modifications"
+  }
+}

@@ -3,6 +3,7 @@ import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useMediaQuery } from 'react-responsive';
 import { PerspectiveCamera } from '@react-three/drei';
+import { useTranslation } from 'react-i18next';
 
 import JavaLogo from '../components/JavaLogo.jsx';
 import JsLogo from '../components/JsLogo.jsx';
@@ -10,13 +11,14 @@ import ReactLogo from '../components/ReactLogo.jsx';
 import HtmlLogo from '../components/HtmlLogo.jsx';
 import CssLogo from '../components/CssLogo.jsx';
 import TailwindLogo from '../components/TailwindLogo.jsx';
-import Button from '../components/Button.jsx';
 import CanvasLoader from '../components/Loading.jsx';
 import HeroCamera from '../components/HeroCamera.jsx';
 import { calculateSizes } from '../constants/index.js';
 import { HackerRoom } from '../components/HackerRoom.jsx';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   // Use media queries to determine screen size
   const isSmall = useMediaQuery({ maxWidth: 440 });
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -28,9 +30,9 @@ const Hero = () => {
     <section className="min-h-screen w-full flex flex-col relative" id="home">
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
         <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
-          Üdv, Bence vagyok! <span className="waving-hand">👋</span>
+          {t('hero.greeting')} <span className="waving-hand">👋</span>
         </p>
-        <p className="hero_tag text-gray_gradient">Szoftverfejlesztő</p>
+        <p className="hero_tag text-gray_gradient">{t('hero.subtitle')}</p>
       </div>
 
       <div className="w-full h-full absolute inset-0">
@@ -45,11 +47,11 @@ const Hero = () => {
 
             <group>
               <ReactLogo position={sizes.reactLogoPosition} />
-              <JavaLogo position={sizes.javaLogoPosition}/>
-              <HtmlLogo position={sizes.htmlLogoPosition}/>
-              <CssLogo/>
-              <JsLogo position={sizes.jsLogoPosition}/>
-              <TailwindLogo position={sizes.tailwindLogoPosition}/>
+              <JavaLogo position={sizes.javaLogoPosition} />
+              <HtmlLogo position={sizes.htmlLogoPosition} />
+              <CssLogo />
+              <JsLogo position={sizes.jsLogoPosition} />
+              <TailwindLogo position={sizes.tailwindLogoPosition} />
             </group>
 
             <ambientLight intensity={1} />

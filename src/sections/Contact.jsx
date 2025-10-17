@@ -1,15 +1,15 @@
-import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import emailjs from '@emailjs/browser';
 
 import useAlert from '../hooks/useAlert.js';
 import Alert from '../components/Alert.jsx';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const formRef = useRef();
-
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
-
   const [form, setForm] = useState({ name: '', email: '', message: '' });
 
   const handleChange = ({ target: { name, value } }) => {
@@ -38,26 +38,21 @@ const Contact = () => {
           setLoading(false);
           showAlert({
             show: true,
-            text: 'Köszönöm az üzenetét!',
+            text: t('contact.alerts.success'),
             type: 'success',
           });
 
           setTimeout(() => {
             hideAlert(false);
-            setForm({
-              name: '',
-              email: '',
-              message: '',
-            });
+            setForm({ name: '', email: '', message: '' });
           }, [3000]);
         },
         (error) => {
           setLoading(false);
           console.error(error);
-
           showAlert({
             show: true,
-            text: "Nem kaptam meg az üzenetét!",
+            text: t('contact.alerts.error'),
             type: 'danger',
           });
         },
@@ -72,11 +67,11 @@ const Contact = () => {
         <img src={`${import.meta.env.BASE_URL}assets/terminal.png`} alt="terminal-bg" className="absolute inset-0 min-h-screen" />
 
         <div className="contact-container">
-          <h3 className="head-text">Lépj velem kapcsolatba!</h3>
+          <h3 className="head-text">{t('contact.title')}</h3>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
             <label className="space-y-3">
-              <span className="field-label">Teljes név</span>
+              <span className="field-label">{t('contact.labels.name')}</span>
               <input
                 type="text"
                 name="name"
@@ -84,12 +79,12 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., John Doe"
+                placeholder={t('contact.placeholders.name')}
               />
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Email cím</span>
+              <span className="field-label">{t('contact.labels.email')}</span>
               <input
                 type="email"
                 name="email"
@@ -97,12 +92,12 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., johndoe@gmail.com"
+                placeholder={t('contact.placeholders.email')}
               />
             </label>
 
             <label className="space-y-3">
-              <span className="field-label">Üzenete</span>
+              <span className="field-label">{t('contact.labels.message')}</span>
               <textarea
                 name="message"
                 value={form.message}
@@ -110,14 +105,13 @@ const Contact = () => {
                 required
                 rows={5}
                 className="field-input"
-                placeholder="Ide írja az üzenetét"
+                placeholder={t('contact.placeholders.message')}
               />
             </label>
 
             <button className="field-btn" type="submit" disabled={loading}>
-              {loading ? 'Küldés...' : 'Elküldés'}
-
-              <img src={`${import.meta.env.BASE_URL}assets/arrow-up.png`}alt="arrow-up" className="field-btn_arrow" />
+              {loading ? t('contact.buttons.sending') : t('contact.buttons.send')}
+              <img src={`${import.meta.env.BASE_URL}assets/arrow-up.png`} alt="arrow-up" className="field-btn_arrow" />
             </button>
           </form>
         </div>
